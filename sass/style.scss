@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    height: 100vh;
+}
+
+.wrap__slider {
+    max-width: 1024px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.wrap__buttons {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0px solid;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    transition: 300ms;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #e4e4e4;
+}
+
+.slider {
+    width: 3072px;
+    position: relative;
+    display: flex;
+    left: 0;
+    transition: 1s;
+
+    img {
+        width: 1024;
+        background-position: center;
+    }
+}
+
+.names {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.name {
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #E4E9ED;
+    background-color: white;
+    cursor: move;
+    transition: 300ms;
+}
+
+.name:hover {
+    color: white;
+    background-color: #0A9A91;
+}
+
+
+@import "media"
